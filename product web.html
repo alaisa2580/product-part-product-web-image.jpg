@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Profile Card</title>
+
+  <style>
+	  
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .product-card {
+      width: 300px;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .image-area {
+      height: 180px;
+      background-color: #000000;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .text-area h1 {
+      color: #333333;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .price {
+      color: green;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: #777777;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .features {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .features li {
+      margin-bottom: 5px;
+    }
+
+    .button-area {
+      display: flex;
+      gap: 10px;
+    }
+
+    .buy-btn,
+    .cart-btn {
+      flex: 1;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buy-btn {
+      background-color: green;
+      color: white;
+      border: none;
+    }
+
+    .buy-btn:hover {
+      opacity: 0.9;
+    }
+	  
+    .cart-btn {
+      background-color: white;
+      color: green;
+      border: 2px solid green;
+    }
+
+    .cart-btn:hover {
+      background-color: #f0fff0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="product-card">
+
+    <div class="image-area">
+      Product image
+    </div>
+
+    <div class="text-area">
+
+      <h1>Wireless Headphones</h1>
+
+      <p class="price">$89.99</p>
+
+      <p class="description">
+        High-quality wireless headphones with noise cancellation
+        and long battery life.
+      </p>
+
+      <ul class="features">
+        <li>Battery: 20hrs</li>
+        <li>Color: Black</li>
+      </ul>
+
+    </div>
+
+    <div class="button-area">
+      <button class="buy-btn">Buy Now</button>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
